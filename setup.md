@@ -32,13 +32,13 @@ Google Sheets OAuth Credentials
 
 ## Installation
 
-> 1. Import Workflow
+### 1. Import Workflow
 - Open n8n.
 - Click Import Workflow.
 - Select workflow.json. (Download from here https://github.com/RamashrayS/PaperFlow/blob/main/worklflow.json)
 - Save the workflow.
 
-> 2. Configure Google Drive Credentials
+### 2. Configure Google Drive Credentials
 
 Create or connect a Google Drive credential inside n8n.
 Required permissions:
@@ -52,7 +52,7 @@ Attach this credential to:
 - Search files and folders1
 - Download file
 
-> 3. Configure Google Gemini (SKip if you are using another model)
+### 3. Configure Google Gemini (SKip if you are using another model)
 
 Create a Gemini credential.
 Obtain an API key from Google AI Studio.
@@ -61,20 +61,20 @@ Create a Gemini credential in n8n.
 Connect it to:
 - AI Agent models (both main and structured outut)
 
-> 4. Configure Google Sheets
+### 4. Configure Google Sheets
 
 Create a Google Sheets credential.
 
 Connect it to:
 Append row in sheet
 
-> 5. Configure Drive Folder
+### 5. Configure Drive Folder
 
 Update the folder search node.
 Replace:
 "YOUR_FOLDER_NAME" with the folder containing the PDFs you want to process.
 
-> 6. Configure Spreadsheet
+### 6. Configure Spreadsheet
 
 Update the APPEND_ROW_IN_SHEET node.
 Replace:
