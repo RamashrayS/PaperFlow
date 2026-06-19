@@ -4,38 +4,22 @@
 
 This workflow automatically processes PDF documents stored in Google Drive, extracts their contents, analyzes them using Google Gemini, converts the response into a structured format, and stores the results in Google Sheets.
 
-Workflow Architecture
-Google Drive
-    ↓
-Locate PDF
-    ↓
-Download PDF
-    ↓
-Extract Text
-    ↓
-Gemini Analysis
-    ↓
-Structured Data
-    ↓
-Google Sheets
-
 ## Prerequisites
+
 Required Software
-n8n
-Google Account
-Google Drive Access
-Google Sheets Access
-Required APIs
-Google Gemini API Key
-Google Drive OAuth Credentials
-Google Sheets OAuth Credentials
+- n8n
+- Google Gemini API Key [Get from Google AI Atudio](https://aistudio.google.com/app/api-keys)
+- Google Drive OAuth Credentials [Get from Google Cloud](https://console.cloud.google.com/welcome)
+- Google Sheets OAuth Credentials [Get from Google Cloud](https://console.cloud.google.com/welcome)
+
+*Here I have used Gemini as an example use API key of any AI model of your choice*
 
 ## Installation
 
 ### 1. Import Workflow
 - Open n8n.
 - Click Import Workflow.
-- Select workflow.json. (Download from here https://github.com/RamashrayS/PaperFlow/blob/main/worklflow.json)
+- Select workflow.json. [Download from here if you didn't alraedy](https://github.com/RamashrayS/PaperFlow/blob/main/worklflow.json)
 - Save the workflow.
 
 ### 2. Configure Google Drive Credentials
@@ -48,11 +32,10 @@ drive
 depending on your setup.
 
 Attach this credential to:
-- Search files and folders
-- Search files and folders1
-- Download file
+- Search file nodes
+- Download file node
 
-### 3. Configure Google Gemini (SKip if you are using another model)
+### 3. Configure Google Gemini (Follow according to your AI model)
 
 Create a Gemini credential.
 Obtain an API key from Google AI Studio.
@@ -95,7 +78,19 @@ Example:
   "category": ""
 }
 
+So you can edit this output in the AI prompt to get the fields you require.
+
+For Eg if you are studying a material you can add fields like 
+{
+"morphology": "",
+"hardness": "",
+"crstal_structure": ""
+}
+
+In the AI prompt give it some contexts about what you want it to do then the utput schemma of what info you want to obtain from the paper.
+
+
 ## Thanks for checking it out! 
 
-Adjust the schema to match your use case.
+Reach out for any troubles.
 Feel free to modify and adapt this workflow for personal or commercial projects.
