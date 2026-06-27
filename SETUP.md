@@ -7,7 +7,7 @@ This workflow automatically processes PDF documents stored in Google Drive, extr
 ## Prerequisites
 
 Required Software
-- n8n
+- [n8n](https://github.com/n8n-io/n8n)
 - Google Gemini API Key [Get from Google AI Atudio](https://aistudio.google.com/app/api-keys)
 - Google Drive OAuth Credentials [Get from Google Cloud](https://console.cloud.google.com/welcome)
 - Google Sheets OAuth Credentials [Get from Google Cloud](https://console.cloud.google.com/welcome)
