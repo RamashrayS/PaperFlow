@@ -3,4 +3,4 @@ This n8n Automation workflow takes any research paper you give it, analyses it u
 
 https://github.com/user-attachments/assets/3efc4807-4b8b-4c63-acba-5650e2d5fd19
 
-Please look up setup.md for steps to set this up for yourself
+Please look up [setup.md](https://github.com/RamashrayS/PaperFlow/blob/main/SETUP.md) for steps to set this up for yourself
